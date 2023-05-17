@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Nature's View Hotel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/gijgo.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  </head>
+
+  <body>
+  
+    <header>
+      <div class="header-area">
+        <div id="sticky-header" class="main-header-area">
+          <div class="container-fluid p-0">
+            <div class="row align-items-center no-gutters">
+              <div class="col-xl-5 col-lg-6">
+                <div class="main-menu d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="rooms.html">rooms</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li>
+                        <a href="#">blog <i class="ti-angle-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="blog.html">blog</a></li>
+                          <li><a href="single-blog.html">single-blog</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">pages <i class="ti-angle-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="elements.html">FAQ</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a class="active" href="SignUpPage.html">Sign Up</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2">
+                <div class="logo-img">
+                  <a href="index.html">
+                    <img src="img/logo.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-4 d-none d-lg-block">
+                <div class="book_room">
+                  <div class="socail_links">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook-square"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="book_btn d-none d-lg-block">
+                    <a class="popup-with-form" href="#test-form">Book A Room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- bradcam_area_start -->
+    <div class="bradcam_area breadcam_bg_1">
+      <h3>Create An Account</h3>
+    </div>
+    <!-- bradcam_area_end -->
+<br>
+    <!-- ================ sing up start ================= -->
+    <section class="vh-100" >
+      <div class="container ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="border-radius: 25px; background-color: #eee;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 " >
+                                
+      
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" >Sign up</p>
+      
+                  <form class=" mx-0 mx-md-4 text-left">
+      
+      
+      <div class="form-group"> 	 
+                  <label for="firstname"><span class="req">* </span> Full Name: </label>
+                      <input class="form-control" type="text" name="firstname" 
+                             id = "txt" onkeyup = "Validate(this)" required /> 
+                          <div id="errFirst"></div>    
+              </div>
+      
+                      <div class="form-group">
+                  <label for="email"><span class="req">* </span> Email Address: </label> 
+                      <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />   
+                          <div class="status" id="status"></div>
+              </div>
+      
+                     <div class="form-group">
+                  <label for="password"><span class="req">* </span> Password: </label>
+                      <input required name="password" type="password" class="form-control inputpass" minlength="8" maxlength="16"  id="pass1" /> <br>
+      
+                  <label for="password"><span class="req">* </span> Password Confirm: </label>
+                      <input required name="password" type="password" class="form-control inputpass" minlength="8" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                          <span id="confirmMessage" class="confirmMessage"></span>
+              </div>
+      
+      
+      <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">  
+       <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions.</a></label><span class="req">   </span>
+             
+      
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                    </div>
+      
+                  </form>
+      
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Grid container -->
+      <div class="containericons">
+      <!-- Section: Social media -->
+      <section class="mb-4 ">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      
+        <!-- Google -->
+        <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+      
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      
+        <!-- Linkedin -->
+        <!-- <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a> -->
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-2"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          >
+          <i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      
+      </div>
+      
+      </div>
+      
+      </section>
+    <!-- ================ sign up end ================= -->
+
+   
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+      <div class="popup_box">
+        <div class="popup_inner">
+          <h3>Check Availability</h3>
+          <form action="#">
+            <div class="row">
+              <div class="col-xl-6">
+                <input id="datepicker" placeholder="Check in date" />
+              </div>
+              <div class="col-xl-6">
+                <input id="datepicker2" placeholder="Check out date" />
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select wide" id="default-select" class="">
+                  <option data-display="Adult">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select wide" id="default-select" class="">
+                  <option data-display="Children">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+              </div>
+              <div class="col-xl-12">
+                <select class="form-select wide" id="default-select" class="">
+                  <option data-display="Room type">Room type</option>
+                  <option value="1">Laxaries Rooms</option>
+                  <option value="2">Deluxe Room</option>
+                  <option value="3">Signature Room</option>
+                  <option value="4">Couple Room</option>
+                </select>
+              </div>
+              <div class="col-xl-12">
+                <button type="submit" class="boxed-btn3">
+                  Check Availability
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+      $("#datepicker").datepicker({
+        iconsLibrary: "fontawesome",
+        icons: {
+          rightIcon: '<span class="fa fa-caret-down"></span>',
+        },
+      });
+      $("#datepicker2").datepicker({
+        iconsLibrary: "fontawesome",
+        icons: {
+          rightIcon: '<span class="fa fa-caret-down"></span>',
+        },
+      });
+    </script>
+  </body>
+</html>
